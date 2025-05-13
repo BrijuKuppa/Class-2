@@ -5,14 +5,14 @@ from texttable import Texttable
 
 colorama.init()
 
-print(f"\n{Fore.CYAN}Welcome to the Sentiment Analysis Tool! {Style.RESET_ALL}")
-user_input = input(f"{Fore.MAGENTA} First, what is your name? {Style.RESET_ALL}").strip()
-if not user_input:
-    user_input = "User"
+print(f"\n{Fore.CYAN}Welcome to the Sentiment Analysis Tool 👋! {Style.RESET_ALL}")
+user_name = input(f"{Fore.MAGENTA} First, what is your name? {Style.RESET_ALL}").strip()
+if not user_name:
+    user_name = "User"
 
 conversation_history = []
 
-print(f"{Fore.CYAN}Hello, {user_input}! Can you write about how you feel today? {Style.RESET_ALL}\n")
+print(f"{Fore.CYAN}Hello, {user_name}! Can you write about how you feel today? {Style.RESET_ALL}\n")
 print(f"{Fore.YELLOW}Options:\n'reset' - restart conversation\n'history' - view what you have written\n'leave' - exit the program{Style.RESET_ALL}")
 
 while True:
